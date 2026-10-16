@@ -23,3 +23,36 @@
 - JavaScript (нативный)
 - Bootstrap 5 (сетка, navbar, утилиты)
 
+## Структура
+
+├── index.html
+├── about.html
+├── services.html
+├── single-service.html
+├── doctors.html
+├── single-doctor.html
+├── blog.html
+├── post.html
+├── contact.html
+├── appointment.html
+├── privacy.html
+├── css/
+│ ├── reset.css
+│ ├── fonts.css
+│ └── style.css
+├── js/
+│ └── main.js
+├── libs/
+│ └── bootstrap/
+└── assets/
+├── images/
+└── fonts/
+
+
+## Автор
+
+**Иван Федотов** — веб-разработчик, врач по образованию.
+
+[GitHub](https://github.com/IvanFedotov333) · [Kwork](https://kwork.ru/user/meddev-ivan)
+
+
