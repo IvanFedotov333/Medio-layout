@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Контакты</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="header">
+      <nav class="navbar navbar-expand-xl navbar--sticky">
+        <div class="container">
+          <!-- Логотип -->
+          <a href="#" class="navbar-brand">Medio.</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainMenu"
+            aria-controls="mainMenu"
+            aria-expanded="false"
+            aria-label="Переключить навигацию"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav mx-auto">
+              <li><a class="nav-link" href="index.html">Главная</a></li>
+              <li><a class="nav-link" href="about.html">О нас</a></li>
+              <li><a class="nav-link" href="services.html">Услуги</a></li>
+              <li><a class="nav-link" href="blog.html">Блог</a></li>
+            </ul>
+            <a href="#" class="btn-contact">Связаться с нами</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-grow-1">
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero__content">
+            <h1 class="page-hero__header">Свяжитесь С Нами</h1>
+            <p class="page-hero__desc">
+              Есть вопросы? Отправьте форму — ответим в течение 24 часов.
+            </p>
+            <nav class="page-hero__crumbs" aria-label="Хлебные крошки">
+              <a href="index.html">Главная</a>
+              <span aria-hidden="true">/</span>
+              <span>Контакты</span>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <div class="contact__inner">
+            <!-- Левая — белая с контактами -->
+            <div class="contact__info">
+              <h2 class="contact__info-header">
+                Остались вопросы? Вы всего лишь в шаге от нас — напишите нам.
+              </h2>
+
+              <ul class="contact__list">
+                <li>
+                  <a href="mailto:mediodental@gmail.com" class="contact__link">
+                    mediodental@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+74085550382" class="contact__link">
+                    (408) 555-0382
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Правая — оранжевая форма -->
+            <div class="contact__form-wrap">
+              <form
+                class="contact__form"
+                id="contactForm"
+                action="#"
+                method="post"
+                novalidate
+              >
+                <div class="contact__fields">
+                  <div class="contact__field contact__field--full">
+                    <label for="fullname" class="contact__label">Имя *</label>
+                    <input
+                      type="text"
+                      id="fullname"
+                      name="fullname"
+                      class="contact__input"
+                      required
+                    />
+                  </div>
+
+                  <div class="contact__field">
+                    <label for="email" class="contact__label">Email *</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="contact__input"
+                      required
+                    />
+                  </div>
+
+                  <div class="contact__field">
+                    <label for="phone" class="contact__label">Телефон *</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="contact__input"
+                      required
+                      pattern="[0-9+\-\s()]{10,18}"
+                    />
+                  </div>
+
+                  <div class="contact__field contact__field--full">
+                    <label for="subject" class="contact__label">Тема *</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="contact__input"
+                      required
+                    />
+                  </div>
+
+                  <div class="contact__field contact__field--full">
+                    <label for="message" class="contact__label"
+                      >Сообщение *</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="contact__input contact__textarea"
+                      rows="3"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="contact__field contact__field--full">
+                  <label class="form-consent">
+                    <input
+                      type="checkbox"
+                      name="consent"
+                      class="form-consent__input"
+                      required
+                    />
+                    <span class="form-consent__text">
+                      Я согласен на обработку персональных данных в соответствии
+                      с
+                      <a href="privacy.html" target="_blank"
+                        >Политикой конфиденциальности</a
+                      >
+                    </span>
+                  </label>
+                </div>
+                <button type="submit" class="contact__btn">
+                  <span>Отправить</span>
+                  <span class="contact__btn-circle" aria-hidden="true"></span>
+                </button>
+                <div class="form-message" id="contactMessage" hidden></div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Большое фото внизу -->
+          <div class="contact__photo" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4 g-lg-5 footer__top">
+          <!-- Колонка 1 -->
+          <div class="col-6 col-md-3">
+            <h3 class="footer__label">Основные</h3>
+            <ul class="footer__list">
+              <li><a href="index.html" class="footer__link">Главная</a></li>
+              <li><a href="about.html" class="footer__link">О нас</a></li>
+              <li><a href="services.html" class="footer__link">Услуги</a></li>
+              <li><a href="contact.html" class="footer__link">Контакты</a></li>
+              <li><a href="doctors.html" class="footer__link">Врачи</a></li>
+            </ul>
+          </div>
+
+          <!-- Колонка 2 -->
+          <div class="col-6 col-md-3">
+            <h3 class="footer__label">Компания</h3>
+            <ul class="footer__list">
+              <li>
+                <a href="service-page.html" class="footer__link">Услуги</a>
+              </li>
+              <li><a href="blog.html" class="footer__link">Блог</a></li>
+              <li>
+                <a href="single-post.html" class="footer__link">Статья</a>
+              </li>
+              <li>
+                <a href="appointment.html" class="footer__link"
+                  >Запись на приём</a
+                >
+              </li>
+              <li><a href="doctor-page.html" class="footer__link">Врач</a></li>
+            </ul>
+          </div>
+
+          <!-- Колонка 3 -->
+          <div class="col-6 col-md-3">
+            <h3 class="footer__label">Контакты</h3>
+            <ul class="footer__list">
+              <li>
+                <a href="mailto:mediodental@gmail.com" class="footer__link"
+                  >mediodental@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+74085550382" class="footer__link"
+                  >(408) 555-0382</a
+                >
+              </li>
+              <li>
+                <span class="footer__link"
+                  >Санкт-Петербург, Невский пр., 62</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Колонка 4 -->
+          <div class="col-6 col-md-3">
+            <h3 class="footer__label">Соцсети</h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">ВКонтакте</a></li>
+              <li><a href="#" class="footer__link">Telegram</a></li>
+              <li><a href="#" class="footer__link">Instagram</a></li>
+              <li><a href="#" class="footer__link">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Гигантский лого -->
+        <div class="footer__watermark" aria-hidden="true">Medio.</div>
+
+        <!-- Копирайт -->
+        <div class="footer__bottom">
+          <span>© 2026 Copyright — Medio</span>
+          <a href="privacy.html" class="footer__bottom-link"
+            >Политика конфиденциальности</a
+          >
+          <span>Все права защищены</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

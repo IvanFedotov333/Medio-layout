@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Блог Medio.</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="header">
+      <nav class="navbar navbar-expand-xl navbar--sticky">
+        <div class="container">
+          <a href="#" class="navbar-brand">Medio.</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainMenu"
+            aria-controls="mainMenu"
+            aria-expanded="false"
+            aria-label="Переключить навигацию"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav mx-auto">
+              <li><a class="nav-link" href="index.html">Главная</a></li>
+              <li><a class="nav-link" href="about.html">О нас</a></li>
+              <li><a class="nav-link" href="services.html">Услуги</a></li>
+              <li><a class="nav-link" href="blog.html">Блог</a></li>
+            </ul>
+            <a href="contact.html" class="btn-contact">Связаться с нами</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-grow-1">
+      <!-- Хлебные крошки + заголовок -->
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero__content">
+            <h1 class="page-hero__header">Наш блог</h1>
+            <p class="page-hero__desc">
+              Простые эстетические решения для уверенной улыбки каждый день.
+            </p>
+            <nav class="page-hero__crumbs" aria-label="Хлебные крошки">
+              <a href="index.html">Главная</a>
+              <span aria-hidden="true">/</span>
+              <span>Блог</span>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <!-- Сетка карточек -->
+      <section class="blog-archive">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <a href="single-post.html" class="post-card">
+                <div class="post-card__img post-card__img--1"></div>
+                <div class="post-card__info">
+                  <span class="post-card__category">Ортодонтия</span>
+                  <h3 class="post-card__title">
+                    Польза ранних ортодонтических осмотров для детей
+                  </h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <a href="single-post.html" class="post-card">
+                <div class="post-card__img post-card__img--2"></div>
+                <div class="post-card__info">
+                  <span class="post-card__category">Имплантация</span>
+                  <h3 class="post-card__title">
+                    Что ожидать во время процедуры имплантации
+                  </h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <a href="single-post.html" class="post-card">
+                <div class="post-card__img post-card__img--3"></div>
+                <div class="post-card__info">
+                  <span class="post-card__category">Эстетика</span>
+                  <h3 class="post-card__title">
+                    Простые эстетические решения для повседневной улыбки
+                  </h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <a href="single-post.html" class="post-card">
+                <div class="post-card__img post-card__img--4"></div>
+                <div class="post-card__info">
+                  <span class="post-card__category">Имплантация</span>
+                  <h3 class="post-card__title">
+                    Как импланты улучшают здоровье полости рта в долгосрочной
+                    перспективе
+                  </h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <a href="single-post.html" class="post-card">
+                <div class="post-card__img post-card__img--5"></div>
+                <div class="post-card__info">
+                  <span class="post-card__category">Эстетика</span>
+                  <h3 class="post-card__title">
+                    Как эстетическая стоматология повышает уверенность в себе
+                  </h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <a href="single-post.html" class="post-card">
+                <div class="post-card__img post-card__img--6"></div>
+                <div class="post-card__info">
+                  <span class="post-card__category">Лечение каналов</span>
+                  <h3 class="post-card__title">
+                    Популярные мифы о лечении корневых каналов
+                  </h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="cta__bg" aria-hidden="true"></div>
+
+        <div class="cta__inner">
+          <div class="cta__content">
+            <div class="cta__badge d-flex align-items-center gap-2">
+              <span class="cta__badge-slash">//</span>
+              <span>Запись</span>
+            </div>
+            <h2 class="cta__header">Улыбка, Которую Вы Заслуживаете!</h2>
+            <a href="appointment.html" class="cta__btn">
+              <span>Записаться На Приём</span>
+              <span class="cta__btn-circle" aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div class="cta__photo cta__photo--1" aria-hidden="true"></div>
+          <div class="cta__photo cta__photo--2" aria-hidden="true"></div>
+          <div class="cta__photo cta__photo--3" aria-hidden="true"></div>
+          <div class="cta__photo cta__photo--4" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4 g-lg-5 footer__top">
+          <!-- Колонка 1 -->
+          <div class="col-6 col-md-3">
+            <h3 class="footer__label">Основные</h3>
+            <ul class="footer__list">
+              <li><a href="index.html" class="footer__link">Главная</a></li>
+              <li><a href="about.html" class="footer__link">О нас</a></li>
+              <li><a href="services.html" class="footer__link">Услуги</a></li>
+              <li><a href="contact.html" class="footer__link">Контакты</a></li>
+              <li><a href="doctors.html" class="footer__link">Врачи</a></li>
+            </ul>
+          </div>
+
+          <!-- Колонка 2 -->
+          <div class="col-6 col-md-3">
+            <h3 class="footer__label">Компания</h3>
+            <ul class="footer__list">
+              <li>
+                <a href="service-page.html" class="footer__link">Услуги</a>
+              </li>
+              <li><a href="blog.html" class="footer__link">Блог</a></li>
+              <li>
+                <a href="single-post.html" class="footer__link">Статья</a>
+              </li>
+              <li>
+                <a href="appointment.html" class="footer__link"
+                  >Запись на приём</a
+                >
+              </li>
+              <li><a href="doctor-page.html" class="footer__link">Врач</a></li>
+            </ul>
+          </div>
+
+          <!-- Колонка 3 -->
+          <div class="col-6 col-md-3">
+            <h3 class="footer__label">Контакты</h3>
+            <ul class="footer__list">
+              <li>
+                <a href="mailto:mediodental@gmail.com" class="footer__link"
+                  >mediodental@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+74085550382" class="footer__link"
+                  >(408) 555-0382</a
+                >
+              </li>
+              <li>
+                <span class="footer__link"
+                  >Санкт-Петербург, Невский пр., 62</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Колонка 4 -->
+          <div class="col-6 col-md-3">
+            <h3 class="footer__label">Соцсети</h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">ВКонтакте</a></li>
+              <li><a href="#" class="footer__link">Telegram</a></li>
+              <li><a href="#" class="footer__link">Instagram</a></li>
+              <li><a href="#" class="footer__link">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Гигантский лого -->
+        <div class="footer__watermark" aria-hidden="true">Medio.</div>
+
+        <!-- Копирайт -->
+        <div class="footer__bottom">
+          <span>© 2026 Copyright — Medio</span>
+          <a href="privacy.html" class="footer__bottom-link"
+            >Политика конфиденциальности</a
+          >
+          <span>Все права защищены</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

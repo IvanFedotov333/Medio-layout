@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Клиника Medio.</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="header">
+      <nav class="navbar navbar-expand-xl navbar--sticky">
+        <div class="container">
+          <!-- Логотип -->
+          <a href="#" class="navbar-brand">Medio.</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainMenu"
+            aria-controls="mainMenu"
+            aria-expanded="false"
+            aria-label="Переключить навигацию"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav mx-auto">
+              <li><a class="nav-link" href="/">Главная</a></li>
+              <li><a class="nav-link" href="about.html">О нас</a></li>
+              <li><a class="nav-link" href="services.html">Услуги</a></li>
+              <li><a class="nav-link" href="blog.html">Блог</a></li>
+            </ul>
+            <a href="contact.html" class="btn-contact">Связаться с нами</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-grow-1">
+      <section class="hero">
+        <div class="container-fluid px-0">
+          <div class="row g-0 g-lg-4">
+            <div class="col-lg-6">
+              <div class="hero__content">
+                <h1 class="hero__header">
+                  Современная <span class="hero__header-accent">Забота</span> о
+                  Здоровье Вашей Улыбки
+                </h1>
+                <p class="hero__description">
+                  Мы делаем каждый визит комфортным и оказываем современную,
+                  бережную помощь пациентам любого возраста
+                </p>
+                <a href="appointment.html" class="hero__btn"
+                  >Записаться на Приём<span class="hero__btn-circle"></span
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-6"><div class="hero__image"></div></div>
+          </div>
+        </div>
+      </section>
+      <section class="marquee">
+        <div class="marquee__track">
+          <div class="marquee__group">
+            <!-- Соцсети -->
+            <div class="marquee__socials">
+              <a href="#" class="marquee__icon" aria-label="Facebook">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9 16V8.5h2.5l.5-3H9V4c0-.8.3-1.5 1.5-1.5h1.3V.1C11.5 0 10.5 0 9.5 0 7 0 5.5 1.5 5.5 4v1.5H3v3h2.5V16h3.5z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="marquee__icon" aria-label="Instagram">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="1" y="1" width="14" height="14" rx="4" />
+                  <circle cx="8" cy="8" r="3.5" />
+                  <circle
+                    cx="12"
+                    cy="4"
+                    r="0.8"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="marquee__icon" aria-label="Twitter">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M15 3.5c-.5.2-1 .4-1.6.4.6-.3 1-.9 1.2-1.5-.5.3-1.1.5-1.8.7C12.3 2.5 11.5 2 10.7 2c-1.5 0-2.8 1.2-2.8 2.8 0 .2 0 .4.1.6C5.7 5.3 3.4 4.1 1.9 2.3c-.3.4-.4.9-.4 1.4 0 1 .5 1.8 1.2 2.3-.4 0-.8-.1-1.2-.3v.1c0 1.3 1 2.5 2.2 2.7-.2.1-.5.1-.7.1-.2 0-.3 0-.5-.1.3 1.1 1.4 1.9 2.6 1.9-1 .8-2.2 1.2-3.5 1.2H1c1.2.8 2.7 1.3 4.3 1.3 5.2 0 8-4.3 8-8v-.4c.6-.4 1-.9 1.4-1.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!-- Email -->
+            <span class="marquee__item">mediodental@gmail.com</span>
+            <span class="marquee__item">/</span>
+            <!-- Телефон -->
+            <span class="marquee__item">+7(987)654-32-10</span>
+          </div>
+          <!-- Вторая группа — точная копия -->
+          <div class="marquee__group" aria-hidden="true">
+            <!-- Соцсети -->
+            <div class="marquee__socials">
+              <a href="#" class="marquee__icon" aria-label="Facebook">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9 16V8.5h2.5l.5-3H9V4c0-.8.3-1.5 1.5-1.5h1.3V.1C11.5 0 10.5 0 9.5 0 7 0 5.5 1.5 5.5 4v1.5H3v3h2.5V16h3.5z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="marquee__icon" aria-label="Instagram">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="1" y="1" width="14" height="14" rx="4" />
+                  <circle cx="8" cy="8" r="3.5" />
+                  <circle
+                    cx="12"
+                    cy="4"
+                    r="0.8"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="marquee__icon" aria-label="Twitter">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M15 3.5c-.5.2-1 .4-1.6.4.6-.3 1-.9 1.2-1.5-.5.3-1.1.5-1.8.7C12.3 2.5 11.5 2 10.7 2c-1.5 0-2.8 1.2-2.8 2.8 0 .2 0 .4.1.6C5.7 5.3 3.4 4.1 1.9 2.3c-.3.4-.4.9-.4 1.4 0 1 .5 1.8 1.2 2.3-.4 0-.8-.1-1.2-.3v.1c0 1.3 1 2.5 2.2 2.7-.2.1-.5.1-.7.1-.2 0-.3 0-.5-.1.3 1.1 1.4 1.9 2.6 1.9-1 .8-2.2 1.2-3.5 1.2H1c1.2.8 2.7 1.3 4.3 1.3 5.2 0 8-4.3 8-8v-.4c.6-.4 1-.9 1.4-1.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!-- Email -->
+            <span class="marquee__item">mediodental@gmail.com</span>
+            <span class="marquee__item">/</span>
+            <!-- Телефон -->
+            <span class="marquee__item">+7(987)654-32-10</span>
+          </div>
+          <div class="marquee__group" aria-hidden="true">
+            <!-- Соцсети -->
+            <div class="marquee__socials">
+              <a href="#" class="marquee__icon" aria-label="Facebook">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9 16V8.5h2.5l.5-3H9V4c0-.8.3-1.5 1.5-1.5h1.3V.1C11.5 0 10.5 0 9.5 0 7 0 5.5 1.5 5.5 4v1.5H3v3h2.5V16h3.5z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="marquee__icon" aria-label="Instagram">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="1" y="1" width="14" height="14" rx="4" />
+                  <circle cx="8" cy="8" r="3.5" />
+                  <circle
+                    cx="12"
+                    cy="4"
+                    r="0.8"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="marquee__icon" aria-label="Twitter">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M15 3.5c-.5.2-1 .4-1.6.4.6-.3 1-.9 1.2-1.5-.5.3-1.1.5-1.8.7C12.3 2.5 11.5 2 10.7 2c-1.5 0-2.8 1.2-2.8 2.8 0 .2 0 .4.1.6C5.7 5.3 3.4 4.1 1.9 2.3c-.3.4-.4.9-.4 1.4 0 1 .5 1.8 1.2 2.3-.4 0-.8-.1-1.2-.3v.1c0 1.3 1 2.5 2.2 2.7-.2.1-.5.1-.7.1-.2 0-.3 0-.5-.1.3 1.1 1.4 1.9 2.6 1.9-1 .8-2.2 1.2-3.5 1.2H1c1.2.8 2.7 1.3 4.3 1.3 5.2 0 8-4.3 8-8v-.4c.6-.4 1-.9 1.4-1.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!-- Email -->
+            <span class="marquee__item">mediodental@gmail.com</span>
+            <span class="marquee__item">/</span>
+            <!-- Телефон -->
+            <span class="marquee__item">+7(987)654-32-10</span>
+          </div>
+          <div class="marquee__group" aria-hidden="true">
+            <!-- Соцсети -->
+            <div class="marquee__socials">
+              <a href="#" class="marquee__icon" aria-label="Facebook">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9 16V8.5h2.5l.5-3H9V4c0-.8.3-1.5 1.5-1.5h1.3V.1C11.5 0 10.5 0 9.5 0 7 0 5.5 1.5 5.5 4v1.5H3v3h2.5V16h3.5z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="marquee__icon" aria-label="Instagram">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="1" y="1" width="14" height="14" rx="4" />
+                  <circle cx="8" cy="8" r="3.5" />
+                  <circle
+                    cx="12"
+                    cy="4"
+                    r="0.8"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="marquee__icon" aria-label="Twitter">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M15 3.5c-.5.2-1 .4-1.6.4.6-.3 1-.9 1.2-1.5-.5.3-1.1.5-1.8.7C12.3 2.5 11.5 2 10.7 2c-1.5 0-2.8 1.2-2.8 2.8 0 .2 0 .4.1.6C5.7 5.3 3.4 4.1 1.9 2.3c-.3.4-.4.9-.4 1.4 0 1 .5 1.8 1.2 2.3-.4 0-.8-.1-1.2-.3v.1c0 1.3 1 2.5 2.2 2.7-.2.1-.5.1-.7.1-.2 0-.3 0-.5-.1.3 1.1 1.4 1.9 2.6 1.9-1 .8-2.2 1.2-3.5 1.2H1c1.2.8 2.7 1.3 4.3 1.3 5.2 0 8-4.3 8-8v-.4c.6-.4 1-.9 1.4-1.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!-- Email -->
+            <span class="marquee__item">mediodental@gmail.com</span>
+            <span class="marquee__item">/</span>
+            <!-- Телефон -->
+            <span class="marquee__item">+7(987)654-32-10</span>
+          </div>
+          <div class="marquee__group" aria-hidden="true">
+            <!-- Соцсети -->
+            <div class="marquee__socials">
+              <a href="#" class="marquee__icon" aria-label="Facebook">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9 16V8.5h2.5l.5-3H9V4c0-.8.3-1.5 1.5-1.5h1.3V.1C11.5 0 10.5 0 9.5 0 7 0 5.5 1.5 5.5 4v1.5H3v3h2.5V16h3.5z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="marquee__icon" aria-label="Instagram">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="1" y="1" width="14" height="14" rx="4" />
+                  <circle cx="8" cy="8" r="3.5" />
+                  <circle
+                    cx="12"
+                    cy="4"
+                    r="0.8"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="marquee__icon" aria-label="Twitter">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M15 3.5c-.5.2-1 .4-1.6.4.6-.3 1-.9 1.2-1.5-.5.3-1.1.5-1.8.7C12.3 2.5 11.5 2 10.7 2c-1.5 0-2.8 1.2-2.8 2.8 0 .2 0 .4.1.6C5.7 5.3 3.4 4.1 1.9 2.3c-.3.4-.4.9-.4 1.4 0 1 .5 1.8 1.2 2.3-.4 0-.8-.1-1.2-.3v.1c0 1.3 1 2.5 2.2 2.7-.2.1-.5.1-.7.1-.2 0-.3 0-.5-.1.3 1.1 1.4 1.9 2.6 1.9-1 .8-2.2 1.2-3.5 1.2H1c1.2.8 2.7 1.3 4.3 1.3 5.2 0 8-4.3 8-8v-.4c.6-.4 1-.9 1.4-1.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!-- Email -->
+            <span class="marquee__item">mediodental@gmail.com</span>
+            <span class="marquee__item">/</span>
+            <!-- Телефон -->
+            <span class="marquee__item">+7(987)654-32-10</span>
+          </div>
+          <div class="marquee__group" aria-hidden="true">
+            <!-- Соцсети -->
+            <div class="marquee__socials">
+              <a href="#" class="marquee__icon" aria-label="Facebook">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9 16V8.5h2.5l.5-3H9V4c0-.8.3-1.5 1.5-1.5h1.3V.1C11.5 0 10.5 0 9.5 0 7 0 5.5 1.5 5.5 4v1.5H3v3h2.5V16h3.5z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="marquee__icon" aria-label="Instagram">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="1" y="1" width="14" height="14" rx="4" />
+                  <circle cx="8" cy="8" r="3.5" />
+                  <circle
+                    cx="12"
+                    cy="4"
+                    r="0.8"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="marquee__icon" aria-label="Twitter">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M15 3.5c-.5.2-1 .4-1.6.4.6-.3 1-.9 1.2-1.5-.5.3-1.1.5-1.8.7C12.3 2.5 11.5 2 10.7 2c-1.5 0-2.8 1.2-2.8 2.8 0 .2 0 .4.1.6C5.7 5.3 3.4 4.1 1.9 2.3c-.3.4-.4.9-.4 1.4 0 1 .5 1.8 1.2 2.3-.4 0-.8-.1-1.2-.3v.1c0 1.3 1 2.5 2.2 2.7-.2.1-.5.1-.7.1-.2 0-.3 0-.5-.1.3 1.1 1.4 1.9 2.6 1.9-1 .8-2.2 1.2-3.5 1.2H1c1.2.8 2.7 1.3 4.3 1.3 5.2 0 8-4.3 8-8v-.4c.6-.4 1-.9 1.4-1.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!-- Email -->
+            <span class="marquee__item">mediodental@gmail.com</span>
+            <span class="marquee__item">/</span>
+            <!-- Телефон -->
+            <span class="marquee__item">+7(987)654-32-10</span>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 d-flex flex-column align-items-center text-center"
+            >
+              <!-- Бейдж -->
+              <div class="about__badge d-flex align-items-center gap-2">
+                <span class="about__badge-slash">//</span>
+                <span>О нас</span>
+              </div>
+              <!-- Заголовок -->
+              <h2 class="about__header">
+                Мы заботимся о здоровье ваших зубов, используя<span
+                  class="about__header-accent"
+                >
+                  современное оборудование</span
+                >
+                и <span class="about__header-accent">бережный подход</span>.
+                Наша команда создаёт условия, в которых вы чувствуете себя
+                комфортно и уверенно — а ваша улыбка становится здоровой и
+                сияющей
+              </h2>
+              <!-- Кнопка -->
+              <a
+                href="about.html"
+                class="about__btn d-inline-flex align-items-center gap-3"
+              >
+                Подробнее о Нас
+                <span class="about__btn-circle"></span>
+              </a>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="gallery__stage">
+              <div class="gallery__item pos--2">
+                <img src="./assets/images/carousel-5.webp" alt="" />
+              </div>
+              <div class="gallery__item pos--1">
+                <img src="./assets/images/carousel-4.webp" alt="" />
+              </div>
+              <div class="gallery__item pos-0">
+                <img src="./assets/images/carousel-3.webp" alt="" />
+              </div>
+              <div class="gallery__item pos-1">
+                <img src="./assets/images/carousel-1.webp" alt="" />
+              </div>
+              <div class="gallery__item pos-2">
+                <img src="./assets/images/carousel-2.webp" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="highlight">
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="highlight__card">
+                  <div class="highlight__label">Лет на рынке</div>
+                  <div class="highlight__number">12+</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="highlight__card">
+                  <div class="highlight__label">Пациентов в год</div>
+                  <div class="highlight__number">8000+</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="highlight__card">
+                  <div class="highlight__label">Врачей в штате</div>
+                  <div class="highlight__number">25+</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="highlight__card">
+                  <div class="highlight__label">Филиалов в городе</div>
+                  <div class="highlight__number">4</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits position-relative overflow-hidden">
+        <!-- Фон — абсолютный слой -->
+        <div
+          class="benefits__bg position-absolute top-0 start-0 w-100 h-100"
+        ></div>
+
+        <!-- Контейнер -->
+
+        <!-- Карточка -->
+        <div class="benefits__card p-5 text-center text-lg-start">
+          <div class="row align-items-center g-4">
+            <!-- Левая колонка -->
+            <div class="col-lg-6">
+              <div
+                class="benefits__badge d-flex align-items-center gap-2 mb-4 justify-content-center justify-content-lg-start"
+              >
+                <span class="benefits__badge-slash">//</span>
+                <span>Преимущества</span>
+              </div>
+              <h2 class="benefits__header mb-0">
+                <span class="benefits__header-span">Преимущества</span>
+                Нашей Клиники
+              </h2>
+            </div>
+
+            <!-- Правая колонка -->
+            <div class="col-lg-6">
+              <div
+                class="benefits__tags d-flex flex-wrap gap-3 justify-content-center justify-content-lg-end"
+              >
+                <span class="benefits__tag">Яркая Улыбка</span>
+                <span class="benefits__tag">Лечение Без Боли</span>
+                <span class="benefits__tag">Крепкое Здоровье</span>
+                <span class="benefits__tag">Уверенность В Себе</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <!-- Заголовок -->
+          <div class="services__header-wrap">
+            <div class="services__badge d-flex align-items-center gap-2">
+              <span class="services__badge-slash">//</span>
+              <span>Услуги</span>
+            </div>
+            <h2 class="services__header">
+              Комплексные <span class="services__header-accent">Услуги</span>
+            </h2>
+          </div>
+
+          <!-- Ряд 1 -->
+          <div class="services__row">
+            <a href="#" class="services__card">Пломбирование</a>
+            <div class="services__img services__img--lg"></div>
+          </div>
+
+          <!-- Ряд 2 -->
+          <div class="services__row">
+            <a href="#" class="services__card">Лечение Каналов</a>
+            <div class="services__img services__img--md"></div>
+          </div>
+
+          <!-- Ряд 3 -->
+          <div class="services__row">
+            <a href="#" class="services__card">Ортодонтия</a>
+            <div class="services__img services__img--sm"></div>
+          </div>
+
+          <!-- Ряд 4 -->
+          <div class="services__row">
+            <a href="#" class="services__card">Отбеливание</a>
+            <div class="services__img services__img--xs"></div>
+          </div>
+        </div>
+      </section>
+      <section class="process">
+        <div class="container">
+          <!-- Заголовок -->
+          <div class="process__head text-center">
+            <div
+              class="process__badge d-flex align-items-center justify-content-center gap-2"
+            >
+              <span class="process__badge-slash">//</span>
+              <span>Процесс</span>
+            </div>
+            <h2 class="process__header">
+              Ваш Путь К
+              <span class="process__header-span">Здоровой Улыбке</span>
+            </h2>
+          </div>
+
+          <!-- Карточка 1 -->
+          <div class="process__card">
+            <div class="process__img process__img--1"></div>
+            <div class="process__info">
+              <h3 class="process__title">1. Запишитесь На Приём</h3>
+              <p class="process__desc">
+                Запишитесь онлайн или по телефону — подберём удобное время. У
+                нас гибкое расписание, и мы легко найдём для вас свободное окно
+                приёма.
+              </p>
+            </div>
+          </div>
+
+          <!-- Карточка 2 -->
+          <div class="process__card">
+            <div class="process__img process__img--2"></div>
+            <div class="process__info">
+              <h3 class="process__title">2. Познакомьтесь С Врачом</h3>
+              <p class="process__desc">
+                Наши специалисты готовы обсудить с вами все детали лечения.
+                Внимательно выслушаем все ваши пожелания и подберём
+                индивидуальный план под ваши нужды.
+              </p>
+            </div>
+          </div>
+
+          <!-- Карточка 3 -->
+          <div class="process__card">
+            <div class="process__img process__img--3"></div>
+            <div class="process__info">
+              <h3 class="process__title">3. Улыбайтесь Уверенно</h3>
+              <p class="process__desc">
+                Вы получите всё необходимое для лечения в комфортной и бережной
+                обстановке. От профилактики до полной пошаговой реставрации.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="container">
+          <div class="testimonials__head text-center">
+            <div
+              class="testimonials__badge d-flex align-items-center justify-content-center gap-2"
+            >
+              <span class="testimonials__badge-slash">//</span>
+              <span>Отзывы</span>
+            </div>
+            <h2 class="testimonials__header">
+              Качество, Подтверждённое
+              <span class="testimonials__header-accent">Отзывами</span>
+            </h2>
+          </div>
+
+          <div class="testimonials__panel">
+            <!-- Отзыв 1 -->
+            <article class="testimonial" data-testimonial>
+              <button
+                class="testimonial__header"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="testimonial__city">Санкт-Петербург</span>
+                <span class="testimonial__name">Артём Шенкер</span>
+                <span class="testimonial__arrow" aria-hidden="true"></span>
+              </button>
+              <div class="testimonial__body">
+                <div class="testimonial__body-inner">
+                  <div class="row g-4 align-items-end">
+                    <div class="col-12 col-md-4">
+                      <div
+                        class="testimonial__photo testimonial__photo--1"
+                      ></div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                      <p class="testimonial__date">09 марта 2025</p>
+                      <p class="testimonial__text">
+                        Пришёл на имплантацию после многих лет стеснения улыбки.
+                        Результат превзошёл ожидания, весь процесс прошёл гладко
+                        и без боли. Рекомендую клинику всем, кто хочет вернуть
+                        уверенность.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Отзыв 2 -->
+            <article class="testimonial" data-testimonial>
+              <button
+                class="testimonial__header"
+                type="button"
+                aria-expanded="false"
+              >
+                <span class="testimonial__city">Москва</span>
+                <span class="testimonial__name">Олег Королёв</span>
+                <span class="testimonial__arrow" aria-hidden="true"></span>
+              </button>
+              <div class="testimonial__body">
+                <div class="testimonial__body-inner">
+                  <div class="row g-4 align-items-end">
+                    <div class="col-12 col-md-4">
+                      <div
+                        class="testimonial__photo testimonial__photo--2"
+                      ></div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                      <p class="testimonial__date">14 февраля 2025</p>
+                      <p class="testimonial__text">
+                        Долго выбирал клинику. Здесь впервые объяснили план
+                        лечения понятным языком и не навязывали лишнего.
+                        Отдельное спасибо анестезиологу.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Отзыв 3 — активный по умолчанию -->
+            <article class="testimonial is-active" data-testimonial>
+              <button
+                class="testimonial__header"
+                type="button"
+                aria-expanded="true"
+              >
+                <span class="testimonial__city">Казань</span>
+                <span class="testimonial__name">Наиль Сайфуллин</span>
+                <span class="testimonial__arrow" aria-hidden="true"></span>
+              </button>
+              <div class="testimonial__body">
+                <div class="testimonial__body-inner">
+                  <div class="row g-4 align-items-end">
+                    <div class="col-12 col-md-4">
+                      <div
+                        class="testimonial__photo testimonial__photo--3"
+                      ></div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                      <p class="testimonial__date">09 марта 2025</p>
+                      <p class="testimonial__text">
+                        Пришёл на имплантацию после многих лет стеснения улыбки.
+                        Результат потрясающий, весь процесс прошёл гладко и без
+                        боли. Очень рекомендую эту клинику всем, кто хочет
+                        вернуть уверенность.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <div class="blog__head">
+            <div class="blog__head-left">
+              <div class="blog__badge d-flex align-items-center gap-2">
+                <span class="blog__badge-slash">//</span>
+                <span>Блог</span>
+              </div>
+              <h2 class="blog__header">
+                Наш <span class="blog__header-accent">Блог</span>
+              </h2>
+            </div>
+
+            <a href="blog.html" class="blog__btn">
+              <span>Все Статьи</span>
+              <span class="blog__btn-circle" aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div class="row g-4">
+            <!-- Карточка 1 — короткая -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <a href="single-post.html" class="post-card">
+                <div
+                  class="post-card__img post-card__img--short post-card__img--1"
+                ></div>
+                <div class="post-card__info">
+                  <span class="post-card__category">Ортодонтия</span>
+                  <h3 class="post-card__title">
+                    Польза ранних ортодонтических осмотров для детей
+                  </h3>
+                </div>
+              </a>
+            </div>
+
+            <!-- Карточка 2 — высокая -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <a href="single-post.html" class="post-card">
+                <div
+                  class="post-card__img post-card__img--tall post-card__img--2"
+                ></div>
+                <div class="post-card__info">
+                  <span class="post-card__category">Имплантация</span>
+                  <h3 class="post-card__title">
+                    Как импланты улучшают здоровье полости рта в долгосрочной
+                    перспективе
+                  </h3>
+                </div>
+              </a>
+            </div>
+
+            <!-- Карточка 3 — короткая -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <a href="single-post.html" class="post-card">
+                <div
+                  class="post-card__img post-card__img--short post-card__img--3"
+                ></div>
+                <div class="post-card__info">
+                  <span class="post-card__category">Эстетика</span>
+                  <h3 class="post-card__title">
+                    Простые эстетические решения для повседневной улыбки
+                  </h3>
+                </div>
+              </a>
+            </div>
+
+            <!-- Карточка 4 — высокая -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <a href="single-post.html" class="post-card">
+                <div
+                  class="post-card__img post-card__img--tall post-card__img--4"
+                ></div>
+                <div class="post-card__info">
+                  <span class="post-card__category">Лечение каналов</span>
+                  <h3 class="post-card__title">
+                    Популярные мифы о лечении корневых каналов
+                  </h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="cta__bg" aria-hidden="true"></div>
+
+        <div class="cta__inner">
+          <div class="cta__content">
+            <div class="cta__badge d-flex align-items-center gap-2">
+              <span class="cta__badge-slash">//</span>
+              <span>Запись</span>
+            </div>
+            <h2 class="cta__header">Улыбка, Которую Вы Заслуживаете!</h2>
+            <a href="appointment.html" class="cta__btn">
+              <span>Записаться На Приём</span>
+              <span class="cta__btn-circle" aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div class="cta__photo cta__photo--1" aria-hidden="true"></div>
+          <div class="cta__photo cta__photo--2" aria-hidden="true"></div>
+          <div class="cta__photo cta__photo--3" aria-hidden="true"></div>
+          <div class="cta__photo cta__photo--4" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4 g-lg-5 footer__top">
+          <!-- Колонка 1 -->
+          <div class="col-6 col-md-3">
+            <h3 class="footer__label">Основные</h3>
+            <ul class="footer__list">
+              <li><a href="index.html" class="footer__link">Главная</a></li>
+              <li><a href="about.html" class="footer__link">О нас</a></li>
+              <li><a href="services.html" class="footer__link">Услуги</a></li>
+              <li><a href="contact.html" class="footer__link">Контакты</a></li>
+              <li><a href="doctors.html" class="footer__link">Врачи</a></li>
+            </ul>
+          </div>
+
+          <!-- Колонка 2 -->
+          <div class="col-6 col-md-3">
+            <h3 class="footer__label">Компания</h3>
+            <ul class="footer__list">
+              <li><a href="services.html" class="footer__link">Услуги</a></li>
+              <li><a href="blog.html" class="footer__link">Блог</a></li>
+              <li>
+                <a href="single-post.html" class="footer__link">Статья</a>
+              </li>
+              <li>
+                <a href="appointment.html" class="footer__link"
+                  >Запись на приём</a
+                >
+              </li>
+              <li><a href="doctor-page.html" class="footer__link">Врач</a></li>
+            </ul>
+          </div>
+
+          <!-- Колонка 3 -->
+          <div class="col-6 col-md-3">
+            <h3 class="footer__label">Контакты</h3>
+            <ul class="footer__list">
+              <li>
+                <a href="mailto:mediodental@gmail.com" class="footer__link"
+                  >mediodental@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+74085550382" class="footer__link"
+                  >(408) 555-0382</a
+                >
+              </li>
+              <li>
+                <span class="footer__link"
+                  >Санкт-Петербург, Невский пр., 62</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Колонка 4 -->
+          <div class="col-6 col-md-3">
+            <h3 class="footer__label">Соцсети</h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">ВКонтакте</a></li>
+              <li><a href="#" class="footer__link">Telegram</a></li>
+              <li><a href="#" class="footer__link">Instagram</a></li>
+              <li><a href="#" class="footer__link">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Гигантский лого -->
+        <div class="footer__watermark" aria-hidden="true">Medio.</div>
+
+        <!-- Копирайт -->
+        <div class="footer__bottom">
+          <span>© 2026 Copyright — Medio</span>
+          <a href="privacy.html" class="footer__bottom-link"
+            >Политика конфиденциальности</a
+          >
+          <span>Все права защищены</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
